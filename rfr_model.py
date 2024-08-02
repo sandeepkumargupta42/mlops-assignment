@@ -10,7 +10,7 @@ import joblib
 
 mlflow.set_tracking_uri("http://127.0.0.1:5000")
 # Load the dataset
-data = pd.read_csv('data/daily_data.csv')
+data = pd.read_csv('raw_data/daily_data.csv')
 
 # Convert ALL_DATE to datetime format
 data['ALL_DATE'] = pd.to_datetime(data['ALL_DATE'], format='%d-%m-%Y')

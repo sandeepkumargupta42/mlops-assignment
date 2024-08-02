@@ -1,1 +1,5 @@
+dvc init
+
 dvc remote add -d dvc_remote gdrive://1N_F9Q92cwYce6cs6ztGv5EgnnemRRSGb
+
+dvc add data/daily_data.csv
