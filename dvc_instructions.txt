@@ -1,5 +1,14 @@
 dvc init
 
-dvc remote add -d dvc_remote gdrive://1N_F9Q92cwYce6cs6ztGv5EgnnemRRSGb
+dvc remote add -d myremote gdrive://1N_F9Q92cwYce6cs6ztGv5EgnnemRRSGb
 
-dvc add data/daily_data.csv
+dvc add data
+
+dvc remote add --default myremote gdrive://1N_F9Q92cwYce6cs6ztGv5EgnnemRRSGb
+dvc remote modify myremote gdrive_acknowledge_abuse true
+dvc push
+
+dvc remote modify myremote --local gdrive_user_credentials_file secret/client_secret.json
+
+dvc remote modify myremote gdrive_use_service_account true
+dvc remote modify myremote --local gdrive_service_account_json_file_path secret/assignment_service.json
