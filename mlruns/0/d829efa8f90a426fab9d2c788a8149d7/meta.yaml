@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/d829efa8f90a426fab9d2c788a8149d7/artifacts
+end_time: 1722605650514
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d829efa8f90a426fab9d2c788a8149d7
+run_name: sneaky-sheep-491
+run_uuid: d829efa8f90a426fab9d2c788a8149d7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722605647204
+status: 3
+tags: []
+user_id: Prahlad Kumar Gupta
