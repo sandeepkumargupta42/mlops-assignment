@@ -19,3 +19,4 @@ jobs:
       run: |
         ls -la
         echo "deployed"
+        docker build . --file Dockerfile --tag my-image-name:$(date +%s)
