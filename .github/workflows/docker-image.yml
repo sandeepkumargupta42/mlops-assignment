@@ -15,9 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
-      # run: |
-      #   ls -la
-      #   sh /home/azureuser/execute.sh
-      #   # docker build -t mlops-assignment .
-      #   echo "deployed"
+      run: docker build . --file Dockerfile --tag mlops-assignment:$(date +%s)
