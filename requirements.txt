@@ -1,3 +1,6 @@
 mlflow
 dvc
 dvc-gdrive
+Flask 
+joblib 
+scikit-learn
