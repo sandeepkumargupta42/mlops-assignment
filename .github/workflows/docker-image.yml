@@ -51,7 +51,7 @@ jobs:
 
       - name: Run tests
         run: |
-          python -m unittest discover
+          python test.py
 
   deployment:
     runs-on: ["self-hosted"]
