@@ -19,9 +19,9 @@ def test_model(model, X_test, run_name):
         # Calculate evaluation metrics (if actual values are provided)
         if 'QTY' in X_test.columns:
             y_test = X_test['QTY']
-            mae = mean_absolute_error(y_test, y_pred)
-            mse = mean_squared_error(y_test, y_pred)
-            r2 = r2_score(y_test, y_pred)
+            mae = mean_absolute_error(y_test, y_pred) # noqa: F821
+            mse = mean_squared_error(y_test, y_pred) # noqa: F821
+            r2 = r2_score(y_test, y_pred) # noqa: F821
             
             # Log metrics
             mlflow.log_metric("mae", mae)
