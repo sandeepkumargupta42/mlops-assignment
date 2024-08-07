@@ -34,11 +34,11 @@ def test_model(model, X_test, run_name):
         # Return only predictions if actual values are not provided
         return y_pred, {}
 
-@app.route('/')
+@app.route('/api')
 def home():
     return "Random Forest Regressor API"
 
-@app.route('/predict', methods=['POST'])
+@app.route('/api/predict', methods=['POST'])
 def predict():
     data = request.json
     # Convert data to DataFrame
